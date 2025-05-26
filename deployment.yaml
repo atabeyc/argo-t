@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: nodejs-hello
-          image: docker.io/otcdigital/nodejs-hello:1.0.0
+          image:  nginx:nonexistent-tag
           ports:
             - containerPort: 3000
 ---
