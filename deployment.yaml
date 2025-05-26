@@ -5,7 +5,8 @@ metadata:
   name: nodejs-hello
   namespace: default
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-failed.slack: "#deployment"
+    notifications.argoproj.io/subscribe.on-health-degraded.slack: "true"
+    notifications.argoproj.io/subscribe.on-sync-failed.slack: "true"
 spec:
   replicas: 1
   selector:
